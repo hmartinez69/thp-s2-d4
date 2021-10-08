@@ -9,4 +9,5 @@ puts hash
 puts "La valeur maximum du wallet est " + max(hash).to_s
 puts "La valeur minimum du wallet est " + min(hash).to_s
 puts "Les cryptos suivantes ont une valeur inférieure à 6000 " + lowest(hash, 6000).to_s
+puts lowest(hash, 6000).length
 puts "La crypto la plus élevée en dessous de 6000 est " + high_lowest(hash, 6000).to_s

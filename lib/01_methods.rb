@@ -1,5 +1,5 @@
 def build_hash (devises, prix)
-  devises_hash = Hash[*devises.zip(prix).flatten]
+  devises_hash = Hash[devises.zip(prix.map(&:to_f))]
 
   return devises_hash
 end
